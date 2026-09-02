@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LawnPlan Support</title>
+<meta name="description" content="Contact LawnPlan support for help with your treatment plan, Pro subscription, or the app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #F3F5EE;
+    --screen-bg: #E5E9DD;
+    --ink: #1C2A1E;
+    --sub: #5A6B57;
+    --card: #FFFFFF;
+    --line: #DCE3D4;
+    --turf: #2F7A3D;
+    --turf-dark: #1E5A2B;
+    --clay: #A3452C;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14201A;
+      --screen-bg: #0E1712;
+      --ink: #EAF2E7;
+      --sub: #9FB39A;
+      --card: #1B2A21;
+      --line: #2A3D30;
+      --turf: #4CA35A;
+      --turf-dark: #6BC178;
+      --clay: #D08160;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: var(--screen-bg);
+    color: var(--ink);
+    font-family: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 80px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .brand svg { flex-shrink: 0; }
+
+  .brand-label {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.6px;
+    color: var(--turf-dark);
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 40px 36px;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    color: var(--sub);
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 34px);
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    text-wrap: balance;
+    margin: 0 0 14px;
+    color: var(--ink);
+  }
+
+  p {
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: var(--sub);
+    margin: 0 0 16px;
+    max-width: 62ch;
+  }
+
+  p:last-of-type { margin-bottom: 0; }
+
+  .contact-block {
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+
+  .contact-label {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--sub);
+    margin: 0 0 12px;
+  }
+
+  .email-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--turf);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    padding: 14px 22px;
+    border-radius: 14px;
+    transition: opacity 0.15s ease;
+  }
+
+  .email-button:hover { opacity: 0.9; }
+  .email-button:focus-visible {
+    outline: 2px solid var(--turf-dark);
+    outline-offset: 3px;
+  }
+
+  .meta {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    color: var(--sub);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .email-button { transition: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--turf)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 20c8 1 16-4 16-14-10 0-15 5-16 14z" />
+      <path d="M4 20c2-6 6-9 11-11" />
+    </svg>
+    <span class="brand-label">LAWNPLAN</span>
+  </div>
+
+  <div class="card">
+    <p class="eyebrow">Support</p>
+    <h1>Need a hand with your lawn plan?</h1>
+    <p>
+      Questions about your treatment calendar, a Pro subscription, soil detection, or anything
+      else in the app &mdash; reach out and we'll get back to you directly.
+    </p>
+    <p>
+      Most replies land within a day or two. If something in the app looks wrong (a product
+      recommendation, a missing month, an alert that didn't fire), tell us what you were doing
+      right before it happened &mdash; that's the fastest way for us to track it down.
+    </p>
+
+    <div class="contact-block">
+      <p class="contact-label">Get in touch</p>
+      <a class="email-button" href="mailto:tayoobideyi@gmail.com?subject=LawnPlan%20support">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16v12H4z" />
+          <path d="M4 6l8 7 8-7" />
+        </svg>
+        tayoobideyi@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <div class="meta">
+    <span>LawnPlan</span>
+    <span>Support</span>
+  </div>
+</main>
+</body>
+</html>
