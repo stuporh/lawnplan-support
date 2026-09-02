@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LawnPlan Privacy Policy</title>
+<meta name="description" content="How LawnPlan collects, uses, and protects your information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #F3F5EE;
+    --screen-bg: #E5E9DD;
+    --ink: #1C2A1E;
+    --sub: #5A6B57;
+    --card: #FFFFFF;
+    --line: #DCE3D4;
+    --turf: #2F7A3D;
+    --turf-dark: #1E5A2B;
+    --clay: #A3452C;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14201A;
+      --screen-bg: #0E1712;
+      --ink: #EAF2E7;
+      --sub: #9FB39A;
+      --card: #1B2A21;
+      --line: #2A3D30;
+      --turf: #4CA35A;
+      --turf-dark: #6BC178;
+      --clay: #D08160;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: var(--screen-bg);
+    color: var(--ink);
+    font-family: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px 80px;
+  }
+
+  main {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+
+  .brand svg { flex-shrink: 0; }
+
+  .brand-label {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.6px;
+    color: var(--turf-dark);
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 40px 36px;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    color: var(--sub);
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 34px);
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    text-wrap: balance;
+    margin: 0 0 8px;
+    color: var(--ink);
+  }
+
+  .updated {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 12px;
+    color: var(--sub);
+    margin: 0 0 28px;
+  }
+
+  h2 {
+    font-family: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: -0.2px;
+    color: var(--ink);
+    margin: 36px 0 12px;
+  }
+
+  section:first-of-type h2 { margin-top: 0; }
+
+  p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--sub);
+    margin: 0 0 14px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ol, ul {
+    margin: 0 0 14px;
+    padding-left: 22px;
+  }
+
+  li {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--sub);
+    margin-bottom: 8px;
+  }
+
+  li:last-child { margin-bottom: 0; }
+
+  li strong { color: var(--ink); font-weight: 600; }
+
+  a {
+    color: var(--turf-dark);
+  }
+
+  .contact-block {
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+
+  .contact-label {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--sub);
+    margin: 0 0 12px;
+  }
+
+  .email-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--turf);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    padding: 14px 22px;
+    border-radius: 14px;
+    transition: opacity 0.15s ease;
+  }
+
+  .email-button:hover { opacity: 0.9; }
+  .email-button:focus-visible {
+    outline: 2px solid var(--turf-dark);
+    outline-offset: 3px;
+  }
+
+  .meta {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    color: var(--sub);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .email-button { transition: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--turf)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 20c8 1 16-4 16-14-10 0-15 5-16 14z" />
+      <path d="M4 20c2-6 6-9 11-11" />
+    </svg>
+    <span class="brand-label">LAWNPLAN</span>
+  </div>
+
+  <div class="card">
+    <p class="eyebrow">Privacy</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Effective September 2, 2026</p>
+
+    <section>
+      <h2>What this covers</h2>
+      <p>
+        This policy explains what information LawnPlan collects when you use the app, why it
+        collects it, and who it shares it with. LawnPlan is built by Tswtch, a small independent
+        team. If you have a question this page doesn't answer, contact us directly at the address
+        below.
+      </p>
+    </section>
+
+    <section>
+      <h2>Information we collect</h2>
+      <p>We collect only what the app needs to build and maintain your lawn treatment plan.</p>
+      <ol>
+        <li><strong>Account email.</strong> If you sign in with Apple, Google, or a one time email link, we store your email address so your plan can sync across devices.</li>
+        <li><strong>Location.</strong> Your address or coordinates are used to look up soil temperature and climate data for your yard. This determines when treatment windows open.</li>
+        <li><strong>Lawn photos.</strong> If you use the grass identification feature, the photo you take is sent to Anthropic's API to identify your grass type. The photo is processed to return a result and is not stored by LawnPlan after that.</li>
+        <li><strong>Push notification token.</strong> If you allow notifications, your device registers a token so we can alert you when a treatment window opens.</li>
+        <li><strong>Purchase information.</strong> If you subscribe to LawnPlan Pro, your subscription status and transaction history are managed through RevenueCat and Apple's or Google's in app billing. We do not see or store your payment card details.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>How we use it</h2>
+      <p>
+        We use this information to run the app: calculating your treatment calendar, detecting
+        your soil temperature, sending Soil Watch alerts, identifying grass from a photo, and
+        keeping your Pro subscription active across devices. We do not sell your information, and
+        we do not use it for advertising.
+      </p>
+    </section>
+
+    <section>
+      <h2>Who we share it with</h2>
+      <p>These services process data on our behalf to run the app.</p>
+      <ul>
+        <li><strong>Supabase</strong> stores your account and lawn profile data.</li>
+        <li><strong>Anthropic</strong> processes lawn photos you submit for grass identification.</li>
+        <li><strong>RevenueCat</strong> manages subscription status and receipt validation.</li>
+        <li><strong>Apple and Google</strong> handle sign in and in app billing when you choose those options.</li>
+        <li><strong>Resend</strong> delivers transactional emails, such as your sign in link.</li>
+      </ul>
+      <p>Each of these services only receives the information needed to perform its function.</p>
+    </section>
+
+    <section>
+      <h2>Your choices</h2>
+      <p>
+        You can use most of LawnPlan without an account. If you do sign in, you can delete your
+        account and all associated data at any time from the Account screen in the app. This
+        permanently removes your lawn profiles, soil readings, alerts, and entitlement records.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data retention</h2>
+      <p>
+        We keep your account data for as long as your account is active. If you delete your
+        account, associated data is removed from our systems. Lawn photos sent for grass
+        identification are not retained after a result is returned.
+      </p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>
+        LawnPlan is not directed at children and we do not knowingly collect information from
+        anyone under 13.
+      </p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy changes in a meaningful way, we will update the effective date above and,
+        where appropriate, notify you in the app.
+      </p>
+    </section>
+
+    <div class="contact-block">
+      <p class="contact-label">Questions</p>
+      <a class="email-button" href="mailto:support@lawnplanpro.com?subject=LawnPlan%20privacy">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16v12H4z" />
+          <path d="M4 6l8 7 8-7" />
+        </svg>
+        support@lawnplanpro.com
+      </a>
+    </div>
+  </div>
+
+  <div class="meta">
+    <span>LawnPlan</span>
+    <span>Privacy Policy</span>
+  </div>
+</main>
+</body>
+</html>
